@@ -1,0 +1,75 @@
+/* Overall body style */
+body {
+  background: #f4f6f8;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container for card & button */
+.container {
+  text-align: center;
+}
+
+/* Card style */
+.card {
+  background: hsl(0, 76%, 32%);
+  width: 320px;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.2);
+}
+
+/* Profile image round & styled */
+.card img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #007bff;
+  margin-bottom: 20px;
+}
+
+/* Name styling */
+.card .name {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 10px 0;
+  color: #333333;
+}
+
+/* Email & country styling */
+.card .mail,
+.card .country {
+  font-size: 14px;
+  color: #555555;
+  margin: 4px 0;
+}
+
+/* Change user button styling */
+button {
+  background: #077fff;
+  color: #ffffff;
+  border: none;
+  padding: 10px 24px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  cursor: pointer;
+  transition:background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
